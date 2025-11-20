@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shorty - Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+
+    <h1>Shorty Dashboard</h1>
+
+    <section class="box">
+      <h2>Create Short URL</h2>
+
+      <div class="form-row">
+        <input id="urlInput" type="text" placeholder="Paste long URL here (including http/https)..." />
+        <button id="shortenBtn">Shorten</button>
+      </div>
+
+      <div id="genResult" class="hidden">
+        <p><strong>Short URL:</strong></p>
+        <a id="shortUrl" href="#" target="_blank"></a>
+        <p>Status: <span id="status"></span></p>
+      </div>
+
+      <div id="msg" class="msg"></div>
+    </section>
+
+    <section class="box">
+      <h2>Existing URLs</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Slug</th>
+            <th>URL</th>
+            <th>Health</th>
+            <th>Clicks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="urlTableBody"></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
