@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shorty - Stats</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Short URL Stats</h1>
+    <a class="back" href="/">← Back to Dashboard</a>
+
+    <div id="infoBox" class="box"></div>
+
+    <h2>Recent Clicks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>IP</th>
+          <th>User Agent</th>
+          <th>Referrer</th>
+        </tr>
+      </thead>
+      <tbody id="clicksBody"></tbody>
+    </table>
+  </main>
+
+  <script src="/code.js"></script>
+</body>
+</html>
